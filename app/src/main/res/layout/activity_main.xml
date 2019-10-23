@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:progress="0"
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:max="100"
+         />
+
+    <TextView
+        android:id="@+id/text_show"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:text="你好吗"
+        android:textSize="100px" />
+    <Button
+android:id="@+id/thread_calculate"
+        android:text="多线程计算，点击空白处取消"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/asynch_task_cal"
+        android:text="异步任务计算，点击空白处取消"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/han_img"
+        android:text="Handler 下载图片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/async_img"
+        android:text="AsyncTask 下载图片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/other_async"
+        android:text="其他异步方式"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="104dp"
+        android:layout_height="82dp"
+        android:src="@mipmap/ic_launcher_round" />
+</LinearLayout>
